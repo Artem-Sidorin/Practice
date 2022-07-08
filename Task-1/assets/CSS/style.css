@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    min-width: 920px;
+}
+
+select {
+    appearance: none;
+    overflow: hidden;
+    background: url("../image/arrow.png") no-repeat right;
+    background-position-x: calc(100% - 20px);
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    min-width: 920px;
+    margin: 0 auto;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    min-height: 500px;
+    background: url("../image/header-bg.jpg") center no-repeat;
+    background-size: cover;
+    /*margin: 30px auto;*/
+    padding-top: 200px;
+    margin-bottom: 60px;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title{
+    font-family: 'Acme', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro_title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #E8C300;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.intro_suptitle{
+    font-family: 'Acme', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:8px;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo{
+    padding-top: 25px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.nav{
+    padding-top: 40px ;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.nav_link{
+    margin: 0 45px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+
+.nav_link:hover{
+    color: bisque;
+}
+
+.btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    border: 1px double #fff;
+    border-radius: 4px;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 15px;
+}
+
+.btn:hover{
+    background-color: #E8C300;
+}
+
+.section{
+    padding: 40px 0;
+}
+
+.section_content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section_text{
+    text-align: center;
+    margin: 0 30px;
+}
+
+.section_title{
+    margin: 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section_subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section_about_text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section_image{
+    margin: 0 30px;
+    box-shadow: 0px 0px 24px 4px rgba(34, 60, 80, 0.76);
+    width: 475px;
+    height: 475px;
+    border-radius: 6px;
+}
+
+.section_image_booking{
+    /*margin: 0 30px;*/
+    box-shadow: 0px 0px 24px 4px rgba(34, 60, 80, 0.76);
+    width: 475px;
+    height: 475px;
+    border-radius: 6px;
+    margin-right: 150px;
+}
+
+.section_contact{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.5);
+    /*margin: 50px;*/
+    padding-top: 50px;
+    text-align: center;
+}
+
+.section_bg{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: url("../image/specialty's-bg.jpg") no-repeat right;
+    background-size: cover;
+    width: 100%;
+    height: 675px;
+}
+
+.booking_input{
+
+}
+
+.input{
+    width:280px;
+    height: 60px;
+    border-radius: 4px;
+    margin: 5px 5px ;
+    border: none;
+    background-color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.5);
+    padding-left: 20px;
+    white-space: nowrap;
+}
+
+.input_contact{
+    width:380px;
+    height: 60px;
+    border-radius: 4px;
+    margin: 5px 2px ;
+    border: none;
+    background-color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.5);
+    padding-left: 20px;
+}
+
+.input_area{
+    width: 1155px;
+    height: 120px;
+    border-radius: 4px;
+    margin: 5px 5px ;
+    border: none;
+    background-color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.5);
+    padding-left: 20px;
+    resize: none;
+}
+
+.input:hover{
+    border: 1px double #E8C300;
+    background-color: #ffffff;
+}
+
+.btn_input{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    border: 1px double #fff;
+    border-radius: 6px;
+    width: 575px;
+    height: 60px;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 15px;
+    background-color: #E8C300;
+    outline:none;
+}
+@media (max-width: 1240px) {
+    .btn_input{
+        width: 280px;
+    }
+    .section_image_booking{
+        margin-right: 0px;
+    }
+    .input_area{
+        width: 380px;
+    }
+}
+
+.btn_input:hover{
+    background-color: #f8cf00;
+}
+
+.section_specialties{
+    font-family: 'Acme', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:8px;
+    padding-bottom: 50px;
+}
+
+.section_title_white{
+    margin: 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.section_subtitle_white{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.section_about_text_white{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-bg {
+    background-color: #000000;
+    height: 90px;
+    line-height: 90px;
+}
+
+.footer_copyright{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
