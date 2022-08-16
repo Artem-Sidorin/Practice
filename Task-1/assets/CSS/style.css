@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section{
     padding: 40px 0;
+    height: 675px;
 }
 
 .section_content{
@@ -293,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: 0px;
     }
     .input_area{
-        width: 380px;
+        width: 80%;
     }
 }
 
